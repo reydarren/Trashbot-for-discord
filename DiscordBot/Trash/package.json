@@ -1,0 +1,9 @@
+{
+        "name": "Trash",
+        "version": "1.0.0",
+        "description": "Adds roles to people.",
+        "main": "bot.js",
+        "author": "ReyDarren M. & Jack N.",
+        "dependencies": {}
+
+}
