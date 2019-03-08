@@ -1,4 +1,4 @@
-const token = "NTUyOTI5MTYyMzIzNTU4NDMw.D2Q6Ig.1G3Rx88dyVjeeeKaj287X4PErB0";
+const token = "";
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
