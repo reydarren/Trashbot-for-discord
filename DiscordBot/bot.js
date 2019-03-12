@@ -27,14 +27,34 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            // !ping
-            case 'ping':
+            // There pings @here
+            case 'here':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Pong!'
+                    message: '@here This is a test'
+                });
+            break;
+            // Tall pings @everyone
+            case 'all':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '@everyone This is a test'
+                });
+            break;
+            // Tcs pings all with @compsci peeps role
+            case 'cs':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '@CompSci Peeps This is a test'
                 });
             break;
             // Just add any case commands if you want to..
+            //case 'Add command here':
+            //bot.sendMessage({
+                //to: channelID,
+                //message: 'What the bot will say here'
+           // });
+            // break;
          }
      }
 });
